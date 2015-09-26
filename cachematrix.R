@@ -2,7 +2,7 @@
 ## functions do
 
 ## Write a short comment describing this function
-
+## this function is a list of functions, but does not do anything itself.  It is creating a list of functiosn to be used with cachesolve
 makeCacheMatrix <- function(x = matrix()) {
   i <- NULL
   set <- function(y) {
@@ -22,6 +22,9 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
+
+## this function is the power behind make CacheMAtrix.  First it sees if the cache is null. 
+## If it isn't null it will pull from the cache, but if it is it will use the bottom half to compute the inverse of the matrix.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
